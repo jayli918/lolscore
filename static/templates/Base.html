@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<HEAD>
+  <meta charset="UTF-8">
+  {% load static from staticfiles %}
+  <link rel="stylesheet" type="text/css" href= "{% static 'stylesheet.css' %}">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</HEAD>
+
+<BODY>
+<div class="container">
+<img class="Logo" src = "{% static 'Picture2.png' %}">
+{% block inputs %} {% endblock %}
+{% block score %} {% endblock %}
+</div>
+<script src = "{% static 'java.js' %}" ></script>
+
+</BODY>
+
+</HTML>
